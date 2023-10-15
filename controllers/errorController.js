@@ -61,11 +61,9 @@ const sendErrorProd = (err, req, res) => {
       //1) LOG ERROR INFO TO THE CONSOLE
       console.error('ERROR', err);
       //2) SEND RESPONSE TO THE CLIENT
-      res
-        .status(500)
-        .render('error', {
-          msg: 'Something went wrong, please try again later',
-        });
+      res.status(500).render('error', {
+        msg: 'Something went wrong, please try again later',
+      });
     }
   }
 };

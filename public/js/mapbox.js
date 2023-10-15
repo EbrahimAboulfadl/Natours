@@ -1,11 +1,9 @@
 /*eslint-disable*/
-console.log('Hellllooooo ');
 const mapbox = document.getElementById('map');
 if (mapbox) {
   const locations = JSON.parse(
     document.getElementById('map').dataset.locations,
   );
-  console.log(locations);
 
   mapboxgl.accessToken =
     'pk.eyJ1IjoiZWJyYWhpbWFib3VsZmFkbCIsImEiOiJjbG5pY242dmcwMWY2Mnhxbzl5OXk5aDFvIn0.og1qaCUKKEr-CownRaqaWw';
