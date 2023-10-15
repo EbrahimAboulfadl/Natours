@@ -66,7 +66,6 @@ app.use(
           'https://*.mapbox.com',
           'https://*.cloudflare.com/',
           'https://bundle.js:*',
-          'ws://127.0.0.1:*/',
         ],
         upgradeInsecureRequests: [],
       },
