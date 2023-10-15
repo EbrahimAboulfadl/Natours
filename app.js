@@ -7,6 +7,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const rateLimit = require('express-rate-limit');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 const toursRouter = require('./routes/toursRoutes');
 const usersRouter = require('./routes/usersRoutes');
 const reviewsRouter = require('./routes/reviewsRoutes');
@@ -107,7 +108,7 @@ app.use(
     ],
   }),
 );
-
+app.use(compression());
 //TEST MIDDLEWARES ADDING REQUEST TIME TO THE REQ.BODY
 app.use((req, res, next) => {
   req.requsesTime = new Date().toISOString();
