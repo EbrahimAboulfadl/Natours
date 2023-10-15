@@ -2,7 +2,7 @@
 
 An app built with modern technologies and love ❤️
 
-- Simply this as a tour booking app built with:
+## **Simply this as a tour booking app built with:**
 
 - NodeJS
 - ExpressJS
